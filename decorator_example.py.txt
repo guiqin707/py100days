@@ -1,0 +1,13 @@
+def outer(fn):
+    def inner():
+        print('好笑吗')
+        fn()
+    return inner
+@outer
+def send():
+    print('哈哈哈，笑死我了')
+send()
+@outer
+def send1():
+    print('真的很好笑')
+send1()
